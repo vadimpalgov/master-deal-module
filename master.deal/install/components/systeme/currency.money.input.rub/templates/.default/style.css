@@ -1,0 +1,24 @@
+.money-editor-currency-selector-wrap-rub{
+    display: none;
+}
+
+.money-field-rub-wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.ui-entity-editor-content-block span.fields .money-field-rub-wrapper input {
+    padding-right: 25px; /* Добавляем отступ для знака */
+    width: 100% !important;
+}
+
+.money-field-rub-wrapper::after {
+    content: "₽";
+    position: absolute;
+    right: 10px; /* Отступ от правого края */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 14px; /* Размер шрифта знака */
+    color: #000; /* Цвет знака */
+}
